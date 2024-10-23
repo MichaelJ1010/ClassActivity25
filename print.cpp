@@ -6,11 +6,11 @@ using namespace std;
 namespace printer {
 
 	void print(customer::Customer customer) { // prints out the customer struct
-		cout << customer.id << endl;
-		cout << customer.name << endl;
-		cout << customer.email << endl;
-		cout << customer.address.street << endl;
-		cout << customer.address.city << endl;
+		cout << "ID: " << customer.id << endl;
+		cout << "Name: " << customer.name << endl;
+		cout << "Email: " << customer.email << endl;
+		cout << customer.address.street << ", ";
+		cout << customer.address.city << ", ";
 		cout << customer.address.zipcode << endl;
 	}
 }
