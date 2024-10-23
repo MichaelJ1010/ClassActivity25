@@ -11,6 +11,9 @@ namespace customer {
 		Customer customer;
 		string name;
 		string email;
+		string street;
+		string city;
+		short int zipcode;
 		int idNumber;
 		cout << "what's your id?" << endl;
 		cin >> idNumber;
@@ -18,6 +21,13 @@ namespace customer {
 		cin >> name;
 		cout << "what's your email?" << endl;
 		cin >> email;
+		cout << "Street: " << street << endl;
+		cin >> street;
+		cout << "City: " << city << endl;
+		cin >> city;
+		cout << "Zipcode: " << endl;
+		cin >> zipcode;
+
 		
 		customer.id = idNumber;
 		customer.name = name;
