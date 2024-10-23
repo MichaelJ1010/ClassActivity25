@@ -1,0 +1,6 @@
+# ninja log v5
+25	642	7514135345244028	CMakeFiles/test.dir/main.cpp.obj	4f6a6f0f3e7d6730
+40	968	7514135348502373	CMakeFiles/test.dir/print.cpp.obj	85d453863dbea2e4
+35	928	7514135348097110	CMakeFiles/test.dir/newCustomer.cpp.obj	a6ad114e6dd452c9
+968	1681	7514135355447843	test.exe	e26256431ecafef0
+30	448	7514135851443211	build.ninja	ab9c6282bf06d210

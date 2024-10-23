@@ -8,7 +8,7 @@ using namespace std;
 namespace customer {
 
 	void newCustomer() { // asks customer to provide their id, name, and email for the struct
-		Customer customer;
+
 		string name;
 		string email;
 		string street;
@@ -28,10 +28,9 @@ namespace customer {
 		cout << "Zipcode: " << endl;
 		cin >> zipcode;
 
+		Customer customer = { idNumber, name, email, {street, city, zipcode} };
 		
-		customer.id = idNumber;
-		customer.name = name;
-		customer.email = email;
+
 		printer::print(customer);
 
 	}
