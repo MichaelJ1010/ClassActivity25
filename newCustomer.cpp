@@ -19,13 +19,14 @@ namespace customer {
 		cout << "what's your id?" << endl;
 		cin >> idNumber;
 		cout << "what's your name" << endl;
-		cin >> name;
+		cin.ignore();
+		getline(cin, name);
 		cout << "what's your email?" << endl;
 		cin >> email;
-		cout << "Street: ";
+		cout << "Street: " << endl;
 		cin.ignore();
 		getline(cin, street);
-		cout << endl << "City: " << endl;
+		cout << "City: " << endl;
 		cin >> city;
 		cout << "Zipcode: " << endl;
 		cin >> zipcode;
