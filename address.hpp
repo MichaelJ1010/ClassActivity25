@@ -1,7 +1,11 @@
 #ifndef ADDRESS_H
 #define ADDRESS_H
 
-namespace address {
-
+namespace location {
+	struct Address {
+		std::string street;
+		std::string city;
+		int zipcode;
+	};
 }
-
+#endif

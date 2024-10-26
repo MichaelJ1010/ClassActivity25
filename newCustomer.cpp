@@ -2,18 +2,19 @@
 #include "./print.hpp"
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 namespace customer {
 
-	void newCustomer() { // asks customer to provide their id, name, and email for the struct
+	void newCustomer() { // all information for struct is given here
 
 		string name;
 		string email;
 		string street;
 		string city;
-		short int zipcode;
+		int zipcode;
 		int idNumber;
 		cout << "what's your id?" << endl;
 		cin >> idNumber;
@@ -21,14 +22,15 @@ namespace customer {
 		cin >> name;
 		cout << "what's your email?" << endl;
 		cin >> email;
-		cout << "Street: " << street << endl;
-		cin >> street;
-		cout << "City: " << city << endl;
+		cout << "Street: ";
+		cin.ignore();
+		getline(cin, street);
+		cout << endl << "City: " << endl;
 		cin >> city;
 		cout << "Zipcode: " << endl;
 		cin >> zipcode;
 
-		Customer customer = { idNumber, name, email, {street, city, zipcode} };
+		structure::Customer customer = { idNumber, name, email, {street, city, zipcode} };
 		
 
 		printer::print(customer);
